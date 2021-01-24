@@ -1,0 +1,17 @@
+{
+  "name": "chat-app-aj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:OJoachim/chat-app-aj.git",
+  "author": "A. Joachimiak <joachim07@poczta.onet.pl>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
