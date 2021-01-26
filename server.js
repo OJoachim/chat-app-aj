@@ -37,7 +37,7 @@ io.on('connection', (socket) => {
     console.log('Oh, socket ' + socket.id + ' has left');
     
     let outUser = users.find((user) => user.id === socket.id);
-    socket.broadcast.emit('outUser', outUser);
+    socket.broadcast.emit('removeUser', outUser);
     console.log(users);
   });
 });

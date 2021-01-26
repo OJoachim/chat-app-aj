@@ -13,8 +13,8 @@ socket.on('message', ({ author, content }) => addMessage(author, content))
 socket.on('join', ({ user, id }) => {
     console.log('User ' + user + ' with id ' + id);
 });
-socket.on('newUser', ({ user }) => addMessage('Chat Bot', `${user} has joined the conversation!`));
-socket.on('removeUser', ({ user }) => addMessage('Chat Bot', `${user} has left the conversation:(`));
+socket.on('newUser', ({ author }) => addMessage('Chat Bot', `${author} has joined the conversation!`));
+socket.on('removeUser', ({ author }) => addMessage('Chat Bot', `${author} has left the conversation:(`));
 
 const login = function (e) {
   e.preventDefault();
